@@ -24,6 +24,7 @@ class get_skin:
         self.uuid = ast.literal_eval(requests.get("https://api.mojang.com/users/profiles/minecraft/"+self.mcid).text)
         self.id = self.uuid["id"]
         self.userdata = (ast.literal_eval(base64.b64decode((ast.literal_eval(requests.get("https://sessionserver.mojang.com/session/minecraft/profile/"+self.id).text))["properties"][0]["value"]).decode()))["textures"]["SKIN"]["url"]
+        return self.userdata
 
 class get_cape:
     def __init__(self, mcid:str):
@@ -31,3 +32,4 @@ class get_cape:
         self.uuid = ast.literal_eval(requests.get("https://api.mojang.com/users/profiles/minecraft/"+self.mcid).text)
         self.id = self.uuid["id"]
         self.userdata = (ast.literal_eval(base64.b64decode((ast.literal_eval(requests.get("https://sessionserver.mojang.com/session/minecraft/profile/"+self.id).text))["properties"][0]["value"]).decode()))["textures"]["CAPE"]["url"]
+        return self.userdata
