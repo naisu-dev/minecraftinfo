@@ -1,0 +1,7 @@
+setup.py
+minecraftinfo/__init__.py
+minecraftinfo/main.py
+minecraftinfo.egg-info/PKG-INFO
+minecraftinfo.egg-info/SOURCES.txt
+minecraftinfo.egg-info/dependency_links.txt
+minecraftinfo.egg-info/top_level.txt
