@@ -19,7 +19,7 @@ class mcje_server:
         self.ping = self.server.ping()
 
 class get_skin:
-    def __init__(self, mcid:str):
+    def __str__(self, mcid:str):
         self.mcid = mcid
         self.uuid = ast.literal_eval(requests.get("https://api.mojang.com/users/profiles/minecraft/"+self.mcid).text)
         self.id = self.uuid["id"]
@@ -27,7 +27,7 @@ class get_skin:
         return self.userdata
 
 class get_cape:
-    def __init__(self, mcid:str):
+    def __str__(self, mcid:str):
         self.mcid = mcid
         self.uuid = ast.literal_eval(requests.get("https://api.mojang.com/users/profiles/minecraft/"+self.mcid).text)
         self.id = self.uuid["id"]
