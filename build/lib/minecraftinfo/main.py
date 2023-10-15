@@ -1,4 +1,7 @@
 from mcstatus import JavaServer
+import requests
+import ast
+import base64
 
 class mcje_server:
     def __init__(self, ipaddress:str, port:int):
@@ -14,3 +17,23 @@ class mcje_server:
         self.motd = self.data.motd
         self.icon = self.data.icon
         self.ping = self.server.ping()
+
+class get_skin:
+    def __init__(self, mcid:str):
+        self.mcid = mcid
+        self.uuid = ast.literal_eval(requests.get("https://api.mojang.com/users/profiles/minecraft/"+self.mcid).text)
+        self.id = self.uuid["id"]
+        self.userdata = (ast.literal_eval(base64.b64decode((ast.literal_eval(requests.get("https://sessionserver.mojang.com/session/minecraft/profile/"+self.id).text))["properties"][0]["value"]).decode()))["textures"]["SKIN"]["url"]
+    def __str__(self):
+        return self.userdata
+
+class get_cape:
+    def __init__(self, mcid:str):
+        self.mcid = mcid
+        self.uuid = ast.literal_eval(requests.get("https://api.mojang.com/users/profiles/minecraft/"+self.mcid).text)
+        self.id = self.uuid["id"]
+        self.userdata = (ast.literal_eval(base64.b64decode((ast.literal_eval(requests.get("https://sessionserver.mojang.com/session/minecraft/profile/"+self.id).text))["properties"][0]["value"]).decode()))["textures"]["CAPE"]["url"]
+    def __str__(self):
+        return self.userdata
+
+myskin = get_cape("Nice_Rice_block")
