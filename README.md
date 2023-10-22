@@ -33,3 +33,9 @@ print(skin)
 cape = mcinfo.get_cape("notch")
 print(cape)
 ```
+
+エラー
+==========
+### ping error
+`Server is not running or server has been modified to not respond to status requests`
+このエラーメッセージがでたら取得したいサーバーが起動していないかステータス要求に応答しないように設定されています
