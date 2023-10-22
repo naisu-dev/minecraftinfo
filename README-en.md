@@ -37,5 +37,5 @@ print(cape)
 error
 ==========
 ### ping error
-`Server is not running or server has been modified to not respond to status requests`
+`Server is not running or server has been modified to not respond to status requests`<br>
 If you get this error message, the server you want to retrieve is not running or is configured not to respond to status requests.
