@@ -1,6 +1,5 @@
 <img src="https://raw.githubusercontent.com/naisu-dev/naisu-dev/main/minecraftinfo.png" width=30px> minecraftinfo
 ==========
-
 <a href="https://pypi.python.org/pypi/minecraftinfo">
 <img src="https://img.shields.io/pypi/v/minecraftinfo.svg" alt="pypi">
 </a> 
@@ -10,6 +9,7 @@
 <a href="https://opensource.org/license/MIT/">
 <img src="https://img.shields.io/github/license/naisu-dev/minecraftinfo" alt="MIT">
 </a>
+
 <br>
 minecraftinfoはpythonでマインクラフトのサーバーやスキンなどの情報を取得することができるライブラリです
 
