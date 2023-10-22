@@ -3,6 +3,9 @@ import requests
 import ast
 import base64
 
+class ping_error(Exception):
+    pass
+
 class mcje_server:
     def __init__(self, ipaddress:str, port:int):
         self.ipaddress = ipaddress
@@ -15,7 +18,10 @@ class mcje_server:
         self.version = self.data.version.name
         self.protocol = self.data.version.protocol
         self.motd = self.data.motd
-        self.ping = self.server.ping()
+        try:
+            self.ping = self.server.ping()
+        except:
+            raise ping_error("Server is not running or server has been modified to not respond to status requests")
 
 class get_skin:
     def __init__(self, mcid:str):
