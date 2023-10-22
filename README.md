@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/naisu-dev/naisu-dev/main/minecraftinfo.png" width=30px> discord.py
+<img src="https://raw.githubusercontent.com/naisu-dev/naisu-dev/main/minecraftinfo.png" width=30px> minecraftinfo
 ==========
 
 <a href="https://pypi.python.org/pypi/minecraftinfo">
