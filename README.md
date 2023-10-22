@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/discord/1164890966507913237?color=5865f2&label=Discord&logo=Discord&logoColor=ffffff" alt="discord">
 </a>
 <a href="https://opensource.org/license/MIT/">
-<img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT">
+<img src="https://img.shields.io/github/license/naisu-dev/minecraftinfo" alt="MIT">
 </a>
 <br>
 minecraftinfoはpythonでマインクラフトのサーバーやスキンなどの情報を取得することができるライブラリです
