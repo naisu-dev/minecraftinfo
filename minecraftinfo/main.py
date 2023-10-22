@@ -15,7 +15,6 @@ class mcje_server:
         self.version = self.data.version.name
         self.protocol = self.data.version.protocol
         self.motd = self.data.motd
-        self.icon = self.data.icon
         self.ping = self.server.ping()
 
 class get_skin:
@@ -35,5 +34,3 @@ class get_cape:
         self.userdata = (ast.literal_eval(base64.b64decode((ast.literal_eval(requests.get("https://sessionserver.mojang.com/session/minecraft/profile/"+self.id).text))["properties"][0]["value"]).decode()))["textures"]["CAPE"]["url"]
     def __str__(self):
         return self.userdata
-
-myskin = get_cape("Nice_Rice_block")
