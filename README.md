@@ -9,3 +9,23 @@ discord.py
 
 minecraftinfoはpythonでマインクラフトのサーバーやスキンなどの情報を取得することができるライブラリです
 
+使用方法
+==========
+```python
+import minecraftinfo as mcinfo
+
+server = mcinfo.mcje_server("minecraft.com", 25565)
+print(server.icon)
+print(server.players)
+print(server.maxplayers)
+print(server.version)
+print(server.protocol)
+print(server.motd)
+print(server.ping)
+
+skin = mcinfo.get_skin("notch")
+print(skin)
+
+cape = mcinfo.get_cape("notch")
+print(cape)
+```
