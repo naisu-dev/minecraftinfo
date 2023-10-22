@@ -5,10 +5,10 @@ discord.py
 </a> 
 <a href="https://discord.com/invite/xWvSTkjNm3">
 <img src="https://img.shields.io/discord/1164890966507913237?color=5865f2&label=Discord&logo=Discord&logoColor=ffffff" alt="discord">
-</a> #https://img.shields.io/badge/License-MIT-yellow.svg
+</a>
 <a href="https://opensource.org/license/MIT/">
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT">
-</a> #https://img.shields.io/badge/License-MIT-yellow.svg
+</a>
 
 minecraftinfoはpythonでマインクラフトのサーバーやスキンなどの情報を取得することができるライブラリです
 
