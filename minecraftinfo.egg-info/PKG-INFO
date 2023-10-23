@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: minecraftinfo
-Version: 1.11
-Summary: Request information Minecraft JavaEdition and BedrockEdition
+Version: 1.12
+Summary: minecraftinfo is a library that allows you to get information about minecraft servers, skins, etc. in python
 Author: naisu
 License: MIT
 Description-Content-Type: text/markdown

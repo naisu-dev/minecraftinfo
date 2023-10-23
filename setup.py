@@ -7,8 +7,8 @@ LONG_DESCRIPTION_CONTENT_TYPE = 'text/markdown'
 
 setup(
     name='minecraftinfo',
-    version="1.11",
-    description="Request information Minecraft JavaEdition and BedrockEdition",
+    version="1.12",
+    description="minecraftinfo is a library that allows you to get information about minecraft servers, skins, etc. in python",
     author='naisu',
     packages=find_packages(),
     license='MIT',
