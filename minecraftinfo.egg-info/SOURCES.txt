@@ -1,3 +1,4 @@
+README.md
 setup.py
 minecraftinfo/__init__.py
 minecraftinfo/main.py
