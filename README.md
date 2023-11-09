@@ -25,7 +25,7 @@ print(server.maxplayers)
 print(server.version)
 print(server.protocol)
 print(server.motd)
-print(server.ping)
+print(server.ping())
 
 skin = mcinfo.get_skin("notch")
 print(skin)
